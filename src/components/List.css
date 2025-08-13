@@ -1,0 +1,41 @@
+.note {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+}
+
+.elementnote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 0.5px solid rgb(206, 200, 200);
+    border-radius: 3px;
+}
+
+.checkbox {
+    accent-color: rgb(163 102 255);
+    padding-inline: 10px;
+}
+
+.element1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.bttdelete {
+    background-color: rgb(163 102 255);
+    color: white;
+    border: rgb(163 102 255);
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.bttdelete:hover {
+    background-color: palevioletred;
+}
