@@ -5,9 +5,10 @@ function InputBar({ onAdd }) {
     const [input, setInput] = useState('');
 
     const addData = () => {
-        if (!input) return;
-        onAdd(input);
-        setInput('')
+        const text = input.trim();
+        if (!text) return;
+        onAdd(text);
+        setInput('');
     };
 
     return (
@@ -19,6 +20,7 @@ function InputBar({ onAdd }) {
                     type="text"
                     value={input}
                     onChange={e => setInput(e.target.value)}
+                    onKeyDown={e => e.key === 'Enter' && addData()}
                 />
                 <button className="bttadd" onClick={addData}>Add</button>
             </div>

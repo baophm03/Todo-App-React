@@ -1,16 +1,20 @@
-import React, { useState } from "react";
-import "./FilterBar.css"
-const FilterBar = () => {
-    const tabs = ['Tất cả', 'Chưa xong', 'Hoàn thành'];
-    const [type, setType] = useState('Tất cả');
+import React from "react";
+import "./FilterBar.css";
+
+const FilterBar = ({ value, onChange, tabs = [] }) => {
     return (
         <div className="filterbar">
             {tabs.map(tab => (
-                <button className="bttfilter" key={tab} onClick={setType(tab)}>
+                <button
+                    className={`bttfilter ${value === tab ? 'active' : ''}`}
+                    key={tab}
+                    onClick={() => onChange(tab)}
+                >
                     {tab}
                 </button>
             ))}
         </div>
-    )
-}
-export default FilterBar
+    );
+};
+
+export default FilterBar;
