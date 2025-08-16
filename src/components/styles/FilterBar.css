@@ -22,6 +22,8 @@
     padding: 7px;
 }
 
-.bttfilteractive {
-    color: bisque;
+.bttfilter.active {
+    background-color: rgb(163 102 255);
+    color: white;
+    border: 0.5px solid rgb(163 102 255);
 }

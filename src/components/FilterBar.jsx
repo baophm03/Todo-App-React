@@ -1,5 +1,5 @@
 import React from "react";
-import "./FilterBar.css";
+import "./styles/FilterBar.css";
 
 const FilterBar = ({ value, onChange, tabs = [] }) => {
     return (

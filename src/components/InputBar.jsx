@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './InputBar.css';
+import './styles/InputBar.css';
 
 function InputBar({ onAdd }) {
     const [input, setInput] = useState('');
